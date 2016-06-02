@@ -1,13 +1,14 @@
 @import "variables";
 @import "mixins";
 @import "default-theme"; //TODO: remove that soon.
+@import "palette";
 
 $md-toolbar-min-height: 64px !default;
 $md-toolbar-font-size: 20px !default;
 $md-toolbar-padding: 16px !default;
 
 @mixin toolbar-theme($palette) {
-  background: md-color($palette);
+  background: $avetta-blue;
   color: md-color($palette, default-contrast);
 }
 
@@ -20,7 +21,7 @@ $md-toolbar-padding: 16px !default;
 
   // Font Styling
   font-size: $md-toolbar-font-size;
-  font-weight: 400;
+  font-weight: 300;
   font-family: $md-font-family;
 
   padding: 0 $md-toolbar-padding;

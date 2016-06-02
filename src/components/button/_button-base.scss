@@ -7,11 +7,11 @@
 @import "button-theme";
 
 // Flat and raised button standards
-$md-button-padding: 0 16px !default;
+$md-button-padding: 0 60px !default;
 $md-button-min-width: 88px !default;
 $md-button-margin: 0 !default;
 $md-button-line-height: 36px !default;
-$md-button-border-radius: 3px !default;
+$md-button-border-radius: 1px !default;
 
 // Icon Button standards
 $md-icon-button-size: 40px !default;
@@ -50,7 +50,8 @@ $md-mini-fab-padding: 8px !default;
   // Typography.
   font-size: $md-body-font-size-base;
   font-family: $md-font-family;
-  font-weight: 500;
+  font-weight: 800;
+  text-transform: capitalize !important;
   color: currentColor;
 
   // Sizing.

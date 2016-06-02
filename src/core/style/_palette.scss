@@ -162,7 +162,7 @@ $md-green: (
   400: #66bb6a,
   500: #4caf50,
   600: #43a047,
-  700: #388e3c,
+  700: #38973c,
   800: #2e7d32,
   900: #1b5e20,
   A100: #b9f6ca,
@@ -327,6 +327,12 @@ $md-blue-grey: (
 );
 
 
+
+// Avetta defaults
+$avetta-blue: #00264d;
+$avetta-dark-blue: #000026;
+$avetta-light-blue: #3964C3;
+
 // Background palette for light themes.
 $md-light-theme-background: (
   status-bar: map_get($md-grey, 300),
@@ -335,17 +341,17 @@ $md-light-theme-background: (
   hover:             rgba(black, 0.04), // TODO(kara): check style with Material Design UX
   card:       white,
   dialog:     white,
-  disabled-button:   rgba(black, 0.12)
+  disabled-button:   rgba(white, 0.12)
 );
 
 // Background palette for dark themes.
 $md-dark-theme-background: (
-  status-bar: black,
+  status-bar: $avetta-light-blue,
   app-bar:    map_get($md-grey, 900),
-  background: #303030,
+  background: $avetta-blue,
   hover:             rgba(white, 0.04), // TODO(kara): check style with Material Design UX
-  card:       map_get($md-grey, 800),
-  dialog:     map_get($md-grey, 800),
+  card:       $avetta-blue,
+  dialog:     $avetta-blue,
   disabled-button:   rgba(white, 0.12)
 );
 
@@ -386,7 +392,7 @@ $md-dark-theme-foreground: (
 
 // Contrast colors. These are hard-coded because it is too difficult (probably impossible) to
 // calculate them. These contrast colors are pulled from the public Material Design spec swatches.
-// While the contrast colors in the spec are not perscriptive, we will use them for convenience.
+// While the contrast colors in the spec are not prescriptive, we will use them for convenience.
 $black-87-opacity: rgba(black, 0.870588);
 $white-87-opacity: rgba(white, 0.870588);
 

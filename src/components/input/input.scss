@@ -4,12 +4,12 @@
 
 
 // Placeholder colors. Required is used for the `*` star shown in the placeholder.
-$md-input-placeholder-color: md-color($md-foreground, hint-text);
+$md-input-placeholder-color: white;
 $md-input-floating-placeholder-color: md-color($md-primary);
-$md-input-required-placeholder-color: md-color($md-accent);
+$md-input-required-placeholder-color: md-color($md-primary);
 
 // Underline colors.
-$md-input-underline-color: md-color($md-foreground, hint-text);
+$md-input-underline-color: md-color($md-primary);
 $md-input-underline-color-accent: md-color($md-accent);
 $md-input-underline-color-warn: md-color($md-warn);
 $md-input-underline-disabled-color: md-color($md-foreground, hint-text);
@@ -74,6 +74,7 @@ $md-input-underline-disabled-background-image: linear-gradient(to right,
   .md-input-element {
     // Font needs to be inherited, because by default <input> has a system font.
     font: inherit;
+    color: inherit;
 
     // The Material input should match whatever background it is above.
     background: transparent;
@@ -81,7 +82,7 @@ $md-input-underline-disabled-background-image: linear-gradient(to right,
     // By default, <input> has a padding, border, outline and a default width.
     border: none;
     outline: none;
-    padding: 0;
+    padding: 3px 0;
     width: 100%;
 
     &.md-end {
@@ -102,7 +103,6 @@ $md-input-underline-disabled-background-image: linear-gradient(to right,
     position: absolute;
     left: 0;
     top: 0;
-
     visibility: hidden;
     font-size: 100%;
     pointer-events: none;  // We shouldn't catch mouse events (let them through).
@@ -129,6 +129,7 @@ $md-input-underline-disabled-background-image: linear-gradient(to right,
 
     // Show the placeholder above the input when it's not empty, or focused.
     &.md-float:not(.md-empty), &.md-float.md-focused {
+      color: $md-input-floating-placeholder-color;
       @include md-input-placeholder-floating;
     }
 
@@ -162,7 +163,7 @@ $md-input-underline-disabled-background-image: linear-gradient(to right,
     height: 1px;
     width: 100%;
     margin-top: 4px;
-    border-top: 1px solid $md-input-underline-color;
+    border-top: 2px solid $md-input-underline-color;
 
     &.md-disabled {
       border-top: 0;
@@ -174,7 +175,7 @@ $md-input-underline-disabled-background-image: linear-gradient(to right,
 
     .md-input-ripple {
       position: absolute;
-      height: 2px;
+      height: 1px;
       z-index: 1;
       background-color: $md-input-underline-focused-color;
       top: -1px;

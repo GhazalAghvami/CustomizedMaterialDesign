@@ -17,8 +17,9 @@ $md-tab-content-min-height: 200px !default;
   position: relative;
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid md-color($md-background, status-bar);
   flex-shrink: 0;
+  background-color: #000026;
+
 }
 
 /** Wraps each tab label */
@@ -29,6 +30,7 @@ $md-tab-content-min-height: 200px !default;
   font-size: $md-body-font-size-base;
   font-family: $md-font-family;
   font-weight: 500;
+  text-transform: uppercase;
   cursor: pointer;
   box-sizing: border-box;
   color: currentColor;
@@ -38,7 +40,6 @@ $md-tab-content-min-height: 200px !default;
   &:focus {
     outline: none;
     opacity: 1;
-    background-color: md-color($md-primary, 100, 0.3);
   }
 }
 
@@ -60,13 +61,14 @@ $md-tab-content-min-height: 200px !default;
   &.md-active {
     display: block;
   }
+  background-color: #00264d;
 }
 
 /** The colored bar that underlines the active tab */
 md-ink-bar {
   position: absolute;
   bottom: 0;
-  height: 2px;
-  background-color: md-color($md-primary, 500);
+  height: 1px;
+  background-color: white;
   transition: 0.35s ease-out;
 }

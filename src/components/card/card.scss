@@ -21,6 +21,7 @@ md-card {
 
 md-card:hover {
   @include md-elevation(2);
+  background: $avetta-blue;
 }
 
 .md-card-flat {

@@ -3,7 +3,7 @@
 
 // Typography
 $md-body-font-size-base: rem(1.400) !default;
-$md-font-family: Roboto, 'Helvetica Neue', sans-serif !default;
+$md-font-family: 'Source Sans Pro', sans-serif  !default;
 
 // Media queries
 $md-xsmall: "max-width: 600px";
@@ -45,3 +45,5 @@ $swift-ease-in-out: all $swift-ease-in-out-duration $swift-ease-in-out-timing-fu
 $swift-linear-duration: 0.08s !default;
 $swift-linear-timing-function: linear !default;
 $swift-linear: all $swift-linear-duration $swift-linear-timing-function !default;
+
+
